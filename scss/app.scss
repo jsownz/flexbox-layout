@@ -12,6 +12,22 @@ body {
   padding: 10px;
 }
 
+h2 {
+  margin-top: 70px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+code {
+  background: $whiteCloud;
+  color: $darkGray;
+  margin: 0 0 20px;
+  display: block;
+  white-space:pre-wrap;
+  width: 50%;
+}
+
 #svg-image-blur {
   display: none;
 }

@@ -8,5 +8,18 @@ body {
   background: rgba(255, 255, 255, 0.6);
   padding: 10px; }
 
+h2 {
+  margin-top: 70px; }
+  h2:first-child {
+    margin-top: 0; }
+
+code {
+  background: #dfdfdf;
+  color: #242424;
+  margin: 0 0 20px;
+  display: block;
+  white-space: pre-wrap;
+  width: 50%; }
+
 #svg-image-blur {
   display: none; }
