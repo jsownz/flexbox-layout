@@ -1,0 +1,12 @@
+body {
+  height: 100%;
+  background: #242424;
+  color: #dfdfdf;
+  font-family: 'Verdana'; }
+
+.box {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px; }
+
+#svg-image-blur {
+  display: none; }

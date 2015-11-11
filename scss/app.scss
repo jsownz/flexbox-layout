@@ -1,0 +1,17 @@
+@import "colors";
+
+body {
+  height: 100%;
+  background: $darkGray;
+  color: $whiteCloud;
+  font-family: 'Verdana';
+}
+
+.box {
+  background: rgba(255,255,255,.6);
+  padding: 10px;
+}
+
+#svg-image-blur {
+  display: none;
+}
