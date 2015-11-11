@@ -1,6 +1,10 @@
-To install:
+##To install:
+```
 npm install -g gulp
 npm install
+```
 
-To run:
+##To run:
+```
 gulp
+```
