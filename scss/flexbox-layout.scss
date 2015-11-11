@@ -1,7 +1,7 @@
 .flex-container {
   &.rows .row, &.cols .col {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   &.rows {
     .row {
@@ -36,7 +36,7 @@
   }
   &.cols {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow: row nowrap;
     &.uneven {
       align-items: flex-start;
@@ -73,6 +73,6 @@
     }
   }
   .box {
-    flex-grow: 1;
+    flex: 1 0 auto;
   }
 }

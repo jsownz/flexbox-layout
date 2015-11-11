@@ -1,6 +1,6 @@
 .flex-container.rows .row, .flex-container.cols .col {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .flex-container.rows .row {
   flex-flow: row wrap;
@@ -24,7 +24,7 @@
 
 .flex-container.cols {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: row nowrap; }
   .flex-container.cols.uneven {
     align-items: flex-start; }
@@ -48,4 +48,4 @@
       margin-bottom: 20px; }
 
 .flex-container .box {
-  flex-grow: 1; }
+  flex: 1 0 auto; }
