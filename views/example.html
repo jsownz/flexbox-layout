@@ -14,13 +14,13 @@
     <h2>Rows</h2>
 
     <code>  .flex-container.rows.gutter-20
-    .row
+    section
       .box*3
-    .row
+    section
       .box*5</code>
 
     <div class="flex-container rows gutter-20">
-      <div class="row">
+      <section>
         <div class="box">
           Row 1 Box 1 information
         </div>
@@ -30,8 +30,8 @@
         <div class="box">
           Row 1 Box 3 information
         </div>
-      </div>
-      <div class="row">
+      </section>
+      <section>
         <div class="box">
           Row 2 Box 1 information<br />
           plus a row
@@ -52,21 +52,21 @@
           Row 2 Box 5 information<br />
           plus a row
         </div>
-      </div>
+      </section>
     </div>
 
     <h2>Cols : Even</h2>
 
     <code>  .flex-container.cols.gutter-10
-    .col
+    section
       .box*3
-    .col
+    section
       .box*5
-    .col
+    section
       .box*3</code>
 
     <div class="flex-container cols gutter-10">
-      <div class="col">
+      <section>
         <div class="box">
           Col 1 Box 1 information
         </div>
@@ -76,8 +76,8 @@
         <div class="box">
           Col 1 Box 3 information
         </div>
-      </div>
-      <div class="col">
+      </section>
+      <section>
         <div class="box">
           Col 2 Box 1 information
         </div>
@@ -93,8 +93,8 @@
         <div class="box">
           Col 2 Box 5 information
         </div>
-      </div>
-      <div class="col">
+      </section>
+      <section>
         <div class="box">
           Col 3 Box 1 information<br />
           Plus a line
@@ -107,21 +107,21 @@
           Col 3 Box 3 information<br />
           Plus a line
         </div>
-      </div>
+      </section>
     </div>
 
     <h2>Cols : Uneven</h2>
 
     <code>  .flex-container.cols.uneven.gutter-10
-    .col
+    section
       .box*3
-    .col
+    section
       .box*5
-    .col
+    section
       .box*3</code>
 
     <div class="flex-container cols uneven gutter-20">
-      <div class="col">
+      <section>
         <div class="box">
           Col 1 Box 1 information
         </div>
@@ -131,8 +131,8 @@
         <div class="box">
           Col 1 Box 3 information
         </div>
-      </div>
-      <div class="col">
+      </section>
+      <section>
         <div class="box">
           Col 2 Box 1 information
         </div>
@@ -148,8 +148,8 @@
         <div class="box">
           Col 2 Box 5 information
         </div>
-      </div>
-      <div class="col">
+      </section>
+      <section>
         <div class="box">
           Col 3 Box 1 information<br />
           Plus a line
@@ -162,8 +162,108 @@
           Col 3 Box 3 information<br />
           Plus a line
         </div>
-      </div>
+      </section>
     </div>
 
+    <h2>Cols : Even : Custom Gutter </h2>
+
+    <code>  .flex-container.cols.even.gutter-custom data-gutter="50"
+    section
+      .box*3
+    section
+      .box*5
+    section
+      .box*3</code>
+
+    <div class="flex-container cols gutter-custom" data-gutter="50">
+      <section>
+        <div class="box">
+          Col 1 Box 1 information
+        </div>
+        <div class="box">
+          Col 1 Box 2 information
+        </div>
+        <div class="box">
+          Col 1 Box 3 information
+        </div>
+      </section>
+      <section>
+        <div class="box">
+          Col 2 Box 1 information
+        </div>
+        <div class="box">
+          Col 2 Box 2 information
+        </div>
+        <div class="box">
+          Col 2 Box 3 information
+        </div>
+        <div class="box">
+          Col 2 Box 4 information
+        </div>
+        <div class="box">
+          Col 2 Box 5 information
+        </div>
+      </section>
+      <section>
+        <div class="box">
+          Col 3 Box 1 information<br />
+          Plus a line
+        </div>
+        <div class="box">
+          Col 3 Box 2 information<br />
+          Plus a line
+        </div>
+        <div class="box">
+          Col 3 Box 3 information<br />
+          Plus a line
+        </div>
+      </section>
+    </div>
+
+    <h2>Rows : Custom Gutter</h2>
+
+    <code>  .flex-container.rows.gutter-custom data-gutter="50"
+    section
+      .box*3
+    section
+      .box*5</code>
+
+    <div class="flex-container rows gutter-custom" data-gutter="50">
+      <section>
+        <div class="box">
+          Row 1 Box 1 information
+        </div>
+        <div class="box">
+          Row 1 Box 2 information
+        </div>
+        <div class="box">
+          Row 1 Box 3 information
+        </div>
+      </section>
+      <section>
+        <div class="box">
+          Row 2 Box 1 information<br />
+          plus a row
+        </div>
+        <div class="box">
+          Row 2 Box 2 information<br />
+          plus a row
+        </div>
+        <div class="box">
+          Row 2 Box 3 information<br />
+          plus a row
+        </div>
+        <div class="box">
+          Row 2 Box 4 information<br />
+          plus a row
+        </div>
+        <div class="box">
+          Row 2 Box 5 information<br />
+          plus a row
+        </div>
+      </section>
+    </div>
+
+    <script src="/js/flexbox-layout.min.js"></script>
   </body>
 </html>

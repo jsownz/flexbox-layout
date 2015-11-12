@@ -19,19 +19,24 @@ gulp.task('start', function () {
 
 // Compile Our Sass
 gulp.task('sass', function() {
-    return gulp.src('scss/*.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('public/css'));
+  return gulp.src('scss/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('public/css'));
 });
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    return gulp.src('js/*.js')
-        .pipe(concat('all.js'))
-        .pipe(gulp.dest('dist'))
-        .pipe(rename('all.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('dist'));
+  return gulp.src('js/*.js')
+    .pipe(concat('flexbox-layout.js'))
+    .pipe(gulp.dest('public/js'))
+    .pipe(rename('flexbox-layout.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('public/js'));
+});
+
+gulp.task('watch', function(){
+  gulp.watch('js/*.js', ['scripts']);
+  gulp.watch('scss/*.scss', ['sass']);
 });
 
 // Default Task
