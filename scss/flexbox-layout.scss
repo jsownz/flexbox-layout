@@ -1,12 +1,12 @@
 .flex-container {
-  &.rows section, &.cols section {
+  &.rows >section, &.cols >section {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
   &.rows {
-    section {
+    >section {
       -webkit-flex-flow: row nowrap;
       flex-flow: row nowrap;
       margin-bottom: 10px;
@@ -21,7 +21,7 @@
       }
     }
     &.gutter-5 {
-      section {
+      >section {
         margin-bottom: 5px;
         .box {
           margin-right: 5px;
@@ -29,7 +29,7 @@
       }
     }
     &.gutter-10 {
-      section {
+      >section {
         margin-bottom: 10px;
         .box {
           margin-right: 10px;
@@ -37,7 +37,7 @@
       }
     }
     &.gutter-20 {
-      section {
+      >section {
         margin-bottom: 20px;
         .box {
           margin-right: 20px;
@@ -55,7 +55,7 @@
     &.uneven {
       align-items: flex-start;
     }
-    section {
+    >section {
       -webkit-flex-flow: column nowrap;
       flex-flow: column nowrap;
       -webkit-flex: 1 0 auto;
@@ -72,7 +72,7 @@
       }
     }
     &.gutter-5 {
-      section {
+      >section {
         margin-right: 5px;
         .box {
           margin-bottom: 5px;
@@ -80,7 +80,7 @@
       }
     }
     &.gutter-10 {
-      section {
+      >section {
         margin-right: 10px;
         .box {
           margin-bottom: 10px;
@@ -88,7 +88,7 @@
       }
     }
     &.gutter-20 {
-      section {
+      >section {
         margin-right: 20px;
         .box {
           margin-bottom: 20px;
