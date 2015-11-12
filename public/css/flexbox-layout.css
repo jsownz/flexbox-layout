@@ -1,28 +1,33 @@
-.flex-container.rows .row, .flex-container.cols .col {
+.flex-container.rows section, .flex-container.cols section {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between; }
 
-.flex-container.rows .row {
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+.flex-container.rows section {
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   margin-bottom: 10px; }
-  .flex-container.rows .row:last-child {
+  .flex-container.rows section:last-child {
     margin-bottom: 0 !important; }
-  .flex-container.rows .row .box {
+  .flex-container.rows section .box {
     margin-right: 10px; }
-    .flex-container.rows .row .box:last-child {
+    .flex-container.rows section .box:last-child {
       margin-right: 0 !important; }
 
-.flex-container.rows.gutter-10 .row {
+.flex-container.rows.gutter-5 section {
+  margin-bottom: 5px; }
+  .flex-container.rows.gutter-5 section .box {
+    margin-right: 5px; }
+
+.flex-container.rows.gutter-10 section {
   margin-bottom: 10px; }
-  .flex-container.rows.gutter-10 .row .box {
+  .flex-container.rows.gutter-10 section .box {
     margin-right: 10px; }
 
-.flex-container.rows.gutter-20 .row {
+.flex-container.rows.gutter-20 section {
   margin-bottom: 20px; }
-  .flex-container.rows.gutter-20 .row .box {
+  .flex-container.rows.gutter-20 section .box {
     margin-right: 20px; }
 
 .flex-container.cols {
@@ -34,25 +39,29 @@
   flex-flow: row nowrap; }
   .flex-container.cols.uneven {
     align-items: flex-start; }
-  .flex-container.cols .col {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
+  .flex-container.cols section {
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
     -webkit-flex: 1 0 auto;
     flex: 1 0 auto;
     margin-right: 10px; }
-    .flex-container.cols .col:last-child {
+    .flex-container.cols section:last-child {
       margin-right: 0px !important; }
-    .flex-container.cols .col .box {
+    .flex-container.cols section .box {
       margin-bottom: 10px; }
-      .flex-container.cols .col .box:last-child {
+      .flex-container.cols section .box:last-child {
         margin-bottom: 0 !important; }
-  .flex-container.cols.gutter-10 .col {
+  .flex-container.cols.gutter-5 section {
+    margin-right: 5px; }
+    .flex-container.cols.gutter-5 section .box {
+      margin-bottom: 5px; }
+  .flex-container.cols.gutter-10 section {
     margin-right: 10px; }
-    .flex-container.cols.gutter-10 .col .box {
+    .flex-container.cols.gutter-10 section .box {
       margin-bottom: 10px; }
-  .flex-container.cols.gutter-20 .col {
+  .flex-container.cols.gutter-20 section {
     margin-right: 20px; }
-    .flex-container.cols.gutter-20 .col .box {
+    .flex-container.cols.gutter-20 section .box {
       margin-bottom: 20px; }
 
 .flex-container .box {
