@@ -1,10 +1,13 @@
 .flex-container {
   &.rows .row, &.cols .col {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
   }
   &.rows {
     .row {
+      -webkit-flex-flow: row wrap;
       flex-flow: row wrap;
       margin-bottom: 10px;
       &:last-child {
@@ -35,15 +38,20 @@
     }
   }
   &.cols {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -webkit-flex-flow: row nowrap;
     flex-flow: row nowrap;
     &.uneven {
       align-items: flex-start;
     }
     .col {
+      -webkit-flex-flow: column wrap;
       flex-flow: column wrap;
-      flex-grow: 1;
+      -webkit-flex: 1 0 auto;
+      flex: 1 0 auto;
       margin-right: 10px;
       &:last-child {
         margin-right: 0px !important;
@@ -73,6 +81,7 @@
     }
   }
   .box {
+    -webkit-flex: 1 0 auto;
     flex: 1 0 auto;
   }
 }
